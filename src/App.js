@@ -1,6 +1,33 @@
 function App() {
   return (
     <div>
+      <div className="overlay">
+        <div className="drawer">
+          <h3>Корзина</h3>
+          <hr />
+          <div className="product-in-cart">
+            <img width={74} height={86} src="/img/iphone/iphone-12.jpeg" />
+            <p>
+              <h4>Apple Iphone 12</h4>
+
+              <span>
+                Цвет: <b>Blue</b>
+              </span>
+
+              <span>
+                Память: <b>64gb</b>
+              </span>
+
+              <span className="span-price">
+                Цена:
+                <b> 49999 P </b>
+              </span>
+            </p>
+            <button>X</button>
+          </div>
+        </div>
+      </div>
+
       <div className="header">
         <div className="header-name">
           <h1>Apple-shop</h1>
@@ -35,9 +62,9 @@ function App() {
       <div className="main-container">
         <h3>Все товары</h3>
         <div className="content">
-          <div className="iphone-12">
-            <img width={110} height={130} src="/img/iphone-12.jpeg" />
-            <p>Apple Iphone 12 64gb</p>
+          <div className="product">
+            <img width={110} height={130} src="/img/iphone/iphone-11.jpeg" />
+            <p>Apple Iphone 11 64gb</p>
 
             <span>
               {" "}
@@ -47,102 +74,73 @@ function App() {
             </span>
           </div>
 
-          <div className="iphone-12">
-            <img width={110} height={130} src="/img/iphone-12.jpeg" />
-            <p> Apple Iphone 12 64gb</p>
+          <div className="product">
+            <img width={110} height={130} src="/img/iphone/iphone-12.jpeg" />
+            <p>Apple Iphone 12 64gb</p>
             <span>
               {" "}
-              49999 P
+              Цена:
+              <b> 49999 P </b>
               <img width={25} height={15} src="/img/Cart.png" />
             </span>
           </div>
 
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
+          <div className="product">
+            <img width={110} height={130} src="/img/iphone/iphone-13.jpeg" />
+            <p>Apple Iphone 13 64gb</p>
+
             <span>
               {" "}
-              49999 P
+              Цена:
+              <b> 49999 P </b>
               <img width={25} height={15} src="/img/Cart.png" />
             </span>
           </div>
 
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
+          <div className="product">
+            <img
+              width={110}
+              height={130}
+              src="/img/iphone/iphone-14-pro.jpeg"
+            />
+            <p>Apple Iphone 14 pro 64gb</p>
+
             <span>
               {" "}
-              49999 P
+              Цена:
+              <b> 49999 P </b>
               <img width={25} height={15} src="/img/Cart.png" />
             </span>
           </div>
 
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
+          <div className="product">
+            <img
+              width={110}
+              height={130}
+              src="/img/apple-watch/apple-watch-ultra.jpeg"
+            />
+            <p>Apple Watch Ultra</p>
+
             <span>
               {" "}
-              49999 P
+              Цена:
+              <b> 49999 P </b>
               <img width={25} height={15} src="/img/Cart.png" />
             </span>
           </div>
 
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
-            <span>
-              {" "}
-              49999 P
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
+          <div className="product">
+            <img
+              width={110}
+              height={130}
+              src="/img/apple-watch/apple-watch-s8.jpeg"
+            />
+            <p>Apple Watch series 8</p>
 
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
             <span>
               {" "}
-              49999 P
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
-            <span>
-              {" "}
-              49999 P
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
-            <span>
-              {" "}
-              49999 P
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
-            <span>
-              {" "}
-              49999 P
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="iphone-12">
-            <img width={100} height={120} src="/img/iphone-12.jpeg" />
-            <p>Iphone 12 64gb</p>
-            <span>
-              {" "}
-              49999 P
+              Цена:
+              <b> 49999 P </b>
               <img width={25} height={15} src="/img/Cart.png" />
             </span>
           </div>
