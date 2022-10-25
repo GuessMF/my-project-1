@@ -5,46 +5,144 @@ function App() {
         <div className="drawer">
           <h3>Корзина</h3>
           <hr />
-          <div className="product-in-cart">
-            <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
-            <p>
-              <h4>Apple Iphone 12</h4>
+          <div className="items">
+            <div className="product-in-cart">
+              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
+              <p>
+                <h4>Apple Iphone 12</h4>
 
-              <span>
-                Цвет: <b>Blue</b>
-              </span>
+                <span>
+                  Цвет: <b>Blue</b>
+                </span>
 
-              <span>
-                Память: <b>64gb</b>
-              </span>
+                <span>
+                  Память: <b>64gb</b>
+                </span>
 
-              <span className="span-price">
-                Цена:
-                <b> 49999 P </b>
-              </span>
-            </p>
-            <button>X</button>
-          </div>
+                <span className="span-price">
+                  Цена:
+                  <b> 49999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div>
 
-          <div className="product-in-cart">
-            <img width={74} height={86} src="/img/iphone/iphone-14-pro.jpeg" />
-            <p>
-              <h4>Apple Iphone 14 pro</h4>
+            <div className="product-in-cart">
+              <img
+                width={74}
+                height={86}
+                src="/img/iphone/iphone-14-pro.jpeg"
+              />
+              <p>
+                <h4>Apple Iphone 14 pro</h4>
 
-              <span>
-                Цвет: <b>Space-grey</b>
-              </span>
+                <span>
+                  Цвет: <b>Space-grey</b>
+                </span>
 
-              <span>
-                Память: <b>256gb</b>
-              </span>
+                <span>
+                  Память: <b>256gb</b>
+                </span>
 
-              <span className="span-price">
-                Цена:
-                <b> 139999 P </b>
-              </span>
-            </p>
-            <button>X</button>
+                <span className="span-price">
+                  Цена:
+                  <b> 139999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div>
+
+            <div className="product-in-cart">
+              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
+              <p>
+                <h4>Apple Iphone 12</h4>
+
+                <span>
+                  Цвет: <b>Blue</b>
+                </span>
+
+                <span>
+                  Память: <b>64gb</b>
+                </span>
+
+                <span className="span-price">
+                  Цена:
+                  <b> 49999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div>
+
+            {/* <div className="product-in-cart">
+              <img
+                width={74}
+                height={86}
+                src="/img/iphone/iphone-14-pro.jpeg"
+              />
+              <p>
+                <h4>Apple Iphone 14 pro</h4>
+
+                <span>
+                  Цвет: <b>Space-grey</b>
+                </span>
+
+                <span>
+                  Память: <b>256gb</b>
+                </span>
+
+                <span className="span-price">
+                  Цена:
+                  <b> 139999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div> */}
+
+            {/* <div className="product-in-cart">
+              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
+              <p>
+                <h4>Apple Iphone 12</h4>
+
+                <span>
+                  Цвет: <b>Blue</b>
+                </span>
+
+                <span>
+                  Память: <b>64gb</b>
+                </span>
+
+                <span className="span-price">
+                  Цена:
+                  <b> 49999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div> */}
+
+            {/* <div className="product-in-cart">
+              <img
+                width={74}
+                height={86}
+                src="/img/iphone/iphone-14-pro.jpeg"
+              />
+              <p>
+                <h4>Apple Iphone 14 pro</h4>
+
+                <span>
+                  Цвет: <b>Space-grey</b>
+                </span>
+
+                <span>
+                  Память: <b>256gb</b>
+                </span>
+
+                <span className="span-price">
+                  Цена:
+                  <b> 139999 P </b>
+                </span>
+              </p>
+              <button>X</button>
+            </div> */}
           </div>
 
           <div className="calculating-in-cart">
@@ -56,7 +154,7 @@ function App() {
               <li>
                 Налог 5% <hr /> <b> 9498 Р</b>
               </li>
-              <button>Оформить заказ 199497 P</button>
+              <button>Оформить заказ</button>
             </ul>
           </div>
         </div>
