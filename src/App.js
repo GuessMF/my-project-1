@@ -36,6 +36,98 @@ function App() {
         <h3>Все товары</h3>
         <div className="content">
           <div className="iphone-12">
+            <img width={110} height={130} src="/img/iphone-12.jpeg" />
+            <p>Apple Iphone 12 64gb</p>
+
+            <span>
+              {" "}
+              Цена:
+              <b> 49999 P </b>
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={110} height={130} src="/img/iphone-12.jpeg" />
+            <p> Apple Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
+            <img width={100} height={120} src="/img/iphone-12.jpeg" />
+            <p>Iphone 12 64gb</p>
+            <span>
+              {" "}
+              49999 P
+              <img width={25} height={15} src="/img/Cart.png" />
+            </span>
+          </div>
+
+          <div className="iphone-12">
             <img width={100} height={120} src="/img/iphone-12.jpeg" />
             <p>Iphone 12 64gb</p>
             <span>
