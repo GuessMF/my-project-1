@@ -6,7 +6,7 @@ function App() {
           <h3>Корзина</h3>
           <hr />
           <div className="product-in-cart">
-            <img width={74} height={86} src="/img/iphone/iphone-12.jpeg" />
+            <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
             <p>
               <h4>Apple Iphone 12</h4>
 
@@ -24,6 +24,40 @@ function App() {
               </span>
             </p>
             <button>X</button>
+          </div>
+
+          <div className="product-in-cart">
+            <img width={74} height={86} src="/img/iphone/iphone-14-pro.jpeg" />
+            <p>
+              <h4>Apple Iphone 14 pro</h4>
+
+              <span>
+                Цвет: <b>Space-grey</b>
+              </span>
+
+              <span>
+                Память: <b>256gb</b>
+              </span>
+
+              <span className="span-price">
+                Цена:
+                <b> 139999 P </b>
+              </span>
+            </p>
+            <button>X</button>
+          </div>
+
+          <div className="calculating-in-cart">
+            <hr />
+            <ul>
+              <li>
+                Цена <hr /> <b>189999 Р</b>
+              </li>
+              <li>
+                Налог 5% <hr /> <b> 9498 Р</b>
+              </li>
+              <button>Оформить заказ 199497 P</button>
+            </ul>
           </div>
         </div>
       </div>
