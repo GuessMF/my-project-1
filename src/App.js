@@ -1,281 +1,64 @@
+import Cart from "./components/Cart";
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Product from "./components/Product";
+
+const arr = [
+  {
+    name: "Apple Iphone 11",
+    memory: "64Gb",
+    imgURL: "/img/iphone/iphone-11.jpeg",
+    price: 49999,
+  },
+  {
+    name: "Apple Iphone 12",
+    memory: "128Gb",
+    imgURL: "/img/iphone/iphone-12.jpeg",
+    price: 79999,
+  },
+  {
+    name: "Apple Iphone 13",
+    memory: "256Gb",
+    imgURL: "/img/iphone/iphone-13.jpeg",
+    price: 89999,
+  },
+  {
+    name: "Apple Iphone 14 Pro",
+    memory: "512Gb",
+    imgURL: "/img/iphone/iphone-14-pro.jpeg",
+    price: 99999,
+  },
+  {
+    name: "Apple Watch series8",
+    imgURL: "/img/apple-watch/apple-watch-s8.jpeg",
+    price: 49999,
+  },
+  {
+    name: "Apple Watch Ultra",
+    imgURL: "/img/apple-watch/apple-watch-ultra.jpeg",
+    price: 129999,
+  },
+];
+
 function App() {
   return (
     <div>
       <div className="overlay">
-        <div className="drawer">
-          <h3>Корзина</h3>
-          <hr />
-          <div className="items">
-            <div className="product-in-cart">
-              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
-              <p>
-                <h4>Apple Iphone 12</h4>
-
-                <span>
-                  Цвет: <b>Blue</b>
-                </span>
-
-                <span>
-                  Память: <b>64gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 49999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div>
-
-            <div className="product-in-cart">
-              <img
-                width={74}
-                height={86}
-                src="/img/iphone/iphone-14-pro.jpeg"
-              />
-              <p>
-                <h4>Apple Iphone 14 pro</h4>
-
-                <span>
-                  Цвет: <b>Space-grey</b>
-                </span>
-
-                <span>
-                  Память: <b>256gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 139999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div>
-
-            <div className="product-in-cart">
-              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
-              <p>
-                <h4>Apple Iphone 12</h4>
-
-                <span>
-                  Цвет: <b>Blue</b>
-                </span>
-
-                <span>
-                  Память: <b>64gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 49999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div>
-
-            {/* <div className="product-in-cart">
-              <img
-                width={74}
-                height={86}
-                src="/img/iphone/iphone-14-pro.jpeg"
-              />
-              <p>
-                <h4>Apple Iphone 14 pro</h4>
-
-                <span>
-                  Цвет: <b>Space-grey</b>
-                </span>
-
-                <span>
-                  Память: <b>256gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 139999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div> */}
-
-            {/* <div className="product-in-cart">
-              <img width={65} height={80} src="/img/iphone/iphone-12-1.jpg" />
-              <p>
-                <h4>Apple Iphone 12</h4>
-
-                <span>
-                  Цвет: <b>Blue</b>
-                </span>
-
-                <span>
-                  Память: <b>64gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 49999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div> */}
-
-            {/* <div className="product-in-cart">
-              <img
-                width={74}
-                height={86}
-                src="/img/iphone/iphone-14-pro.jpeg"
-              />
-              <p>
-                <h4>Apple Iphone 14 pro</h4>
-
-                <span>
-                  Цвет: <b>Space-grey</b>
-                </span>
-
-                <span>
-                  Память: <b>256gb</b>
-                </span>
-
-                <span className="span-price">
-                  Цена:
-                  <b> 139999 P </b>
-                </span>
-              </p>
-              <button>X</button>
-            </div> */}
-          </div>
-
-          <div className="calculating-in-cart">
-            <hr />
-            <ul>
-              <li>
-                Цена <hr /> <b>189999 Р</b>
-              </li>
-              <li>
-                Налог 5% <hr /> <b> 9498 Р</b>
-              </li>
-              <button>Оформить заказ</button>
-            </ul>
-          </div>
-        </div>
+        <Cart />
       </div>
-
-      <div className="header">
-        <div className="header-name">
-          <h1>Apple-shop</h1>
-        </div>
-        <div className="header-menu">
-          <li>All products</li>
-          <li>Solutions</li>
-          <li>About</li>
-          <li>Support</li>
-        </div>
-        <div className="header-search-cart">
-          <li>
-            <img width={30} height={30} src="/img/search-2.png" />
-          </li>
-          <li>
-            <img width={40} height={30} src="/img/Cart.png" />
-          </li>
-        </div>
-      </div>
-
-      <div className="slider">
-        <div className="slider-main-info">
-          <h2>The new phones are here take a look.</h2>
-          <p>
-            info info info info info info info info info info info info info
-            info info info info info
-          </p>
-          <button className="slider-main-button">Explore</button>
-        </div>
-        <img width={500} height={400} src="/img/slider-main.png" />
-      </div>
+      <Header />
+      <Slider />
       <div className="main-container">
         <h3>Все товары</h3>
         <div className="content">
-          <div className="product">
-            <img width={110} height={130} src="/img/iphone/iphone-11.jpeg" />
-            <p>Apple Iphone 11 64gb</p>
-
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="product">
-            <img width={110} height={130} src="/img/iphone/iphone-12.jpeg" />
-            <p>Apple Iphone 12 64gb</p>
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="product">
-            <img width={110} height={130} src="/img/iphone/iphone-13.jpeg" />
-            <p>Apple Iphone 13 64gb</p>
-
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="product">
-            <img
-              width={110}
-              height={130}
-              src="/img/iphone/iphone-14-pro.jpeg"
+          {arr.map((obj) => (
+            <Product
+              name={obj.name}
+              memory={obj.memory}
+              imgURL={obj.imgURL}
+              price={obj.price}
             />
-            <p>Apple Iphone 14 pro 64gb</p>
-
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="product">
-            <img
-              width={110}
-              height={130}
-              src="/img/apple-watch/apple-watch-ultra.jpeg"
-            />
-            <p>Apple Watch Ultra</p>
-
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
-
-          <div className="product">
-            <img
-              width={110}
-              height={130}
-              src="/img/apple-watch/apple-watch-s8.jpeg"
-            />
-            <p>Apple Watch series 8</p>
-
-            <span>
-              {" "}
-              Цена:
-              <b> 49999 P </b>
-              <img width={25} height={15} src="/img/Cart.png" />
-            </span>
-          </div>
+          ))}
         </div>
       </div>
     </div>

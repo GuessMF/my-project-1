@@ -1,0 +1,43 @@
+.product {
+  //padding: 2px;
+  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.405);
+    transform: translateY(-5px);
+  }
+
+  img {
+    margin: 0 auto;
+    background-color: hsl(0, 1%, 97%);
+  }
+  display: grid;
+  justify-content: center;
+  background-color: hsl(0, 1%, 97%);
+
+  width: 220px;
+  height: 220px;
+  margin: 10px;
+  border-radius: 20px;
+
+  .productName {
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .productMemory {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    // margin: 10px;
+  }
+
+  .productPrice {
+    margin-top: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
