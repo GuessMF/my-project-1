@@ -1,7 +1,7 @@
 .product {
   //padding: 2px;
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
-  cursor: pointer;
+  // cursor: pointer;
 
   &:hover {
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.405);
@@ -39,5 +39,12 @@
     margin-top: 5px;
     text-align: center;
     margin-bottom: 5px;
+    img {
+      margin-left: 10px;
+      cursor: pointer;
+      padding: 2px;
+      border-radius: 3px;
+      border: black solid 1px;
+    }
   }
 }
