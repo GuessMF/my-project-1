@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.scss";
-export default function Header() {
+export default function Header(props) {
   return (
     // <div className="header">
     <div className={styles.header}>
@@ -15,10 +15,23 @@ export default function Header() {
       </div>
       <div className={styles.headerSearchCart}>
         <li>
-          <img width={30} height={30} src="/img/search-2.png" alt="search" />
+          <input />
+          <img
+            width={30}
+            height={30}
+            src="/img/search-2.png"
+            alt="search"
+            className={styles.searchImg}
+          />
         </li>
         <li>
-          <img width={40} height={30} src="/img/Cart.png" alt="cart" />
+          <img
+            width={40}
+            height={30}
+            onClick={props.onClickCart}
+            src="/img/Cart3.png"
+            alt="cart"
+          />
         </li>
       </div>
     </div>
