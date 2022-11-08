@@ -46,6 +46,7 @@ function App() {
   const [products, setProducts] = React.useState([]);
   const [cartProducts, setCartProducts] = React.useState([]);
   const [cartOpened, setCartOpened] = React.useState(false);
+  // const [searchOpened, setSearchOpened] = React.useState(false);
 
   React.useEffect(() => {
     fetch("https://6367cafad1d09a8fa61aa550.mockapi.io/products")
@@ -60,12 +61,19 @@ function App() {
     setCartProducts((prev) => [...prev, obj]);
   };
 
+  // const searchOpen = () => {
+  //   console.log("gello");
+  // };
+
   return (
     <div>
       {cartOpened && (
         <Cart products={cartProducts} closeCart={() => setCartOpened(false)} />
       )}
-      <Header onClickCart={() => setCartOpened(true)} />
+      <Header
+        onClickCart={() => setCartOpened(true)}
+        // onMouseOverSearch={() => setSearchOpened(true)}
+      />
       <Slider />
       <div className="main-container">
         <h3>Все товары</h3>

@@ -1,6 +1,17 @@
 import React from "react";
 import styles from "./Header.module.scss";
 export default function Header(props) {
+  const [searchOpen, setSearchOpen] = React.useState(false);
+
+  const openSearch = () => {
+    setSearchOpen(!searchOpen);
+    // console.log("Open");
+  };
+  // const closeSearch = () => {
+  //   setSearchOpen(!searchOpen);
+  //   // console.log("Close");
+  // };
+
   return (
     // <div className="header">
     <div className={styles.header}>
@@ -15,13 +26,18 @@ export default function Header(props) {
       </div>
       <div className={styles.headerSearchCart}>
         <li>
-          <input />
+          <input
+            className={searchOpen ? null : styles.noSearchInput}
+            // className={styles.noSearchInput}
+          />
           <img
             width={30}
             height={30}
             src="/img/search-2.png"
             alt="search"
             className={styles.searchImg}
+            onMouseOver={openSearch}
+            onMouseOut={openSearch}
           />
         </li>
         <li>

@@ -25,22 +25,35 @@
   }
 
   .headerSearchCart {
-    margin-top: 10px;
+    // margin-top: 10px;
     margin-right: 15px;
     height: 50px;
+
     input {
       // margin-bottom: 20px;
-      background-color: aqua;
-      width: 50px;
+      border-radius: 5px;
+      border: black solid 1px;
+      width: 200px;
       height: 20px;
+
+      position: absolute;
+      top: 32px;
+      right: 130px;
+    }
+    .noSearchInput {
+      display: none;
+      position: absolute;
+      top: 32px;
+      right: 130px;
     }
 
     .searchImg {
       cursor: pointer;
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       margin-top: 20px;
     }
+
     li {
       display: inline;
       margin: 10px;
