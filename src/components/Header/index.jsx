@@ -28,7 +28,7 @@ export default function Header(props) {
         <li>
           <input
             className={searchOpen ? null : styles.noSearchInput}
-            // className={styles.noSearchInput}
+            onMouseOut={() => setTimeout(console.log("123"), 1000)}
           />
           <img
             width={30}
@@ -36,8 +36,7 @@ export default function Header(props) {
             src="/img/search-2.png"
             alt="search"
             className={styles.searchImg}
-            onMouseOver={openSearch}
-            onMouseOut={openSearch}
+            onClick={openSearch}
           />
         </li>
         <li>
