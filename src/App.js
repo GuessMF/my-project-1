@@ -57,6 +57,7 @@ function App() {
         setProducts(json);
       });
   }, []);
+
   const addToCart = (obj) => {
     setCartProducts((prev) => [...prev, obj]);
   };
