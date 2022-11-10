@@ -2,15 +2,16 @@ import React from "react";
 import styles from "./Header.module.scss";
 export default function Header(props) {
   const [searchOpen, setSearchOpen] = React.useState(false);
+  const [searchValue, setSearchValue] = React.useState("");
 
   const openSearch = () => {
     setSearchOpen(!searchOpen);
-    // console.log("Open");
   };
-  // const closeSearch = () => {
-  //   setSearchOpen(!searchOpen);
-  //   // console.log("Close");
-  // };
+
+  const onChangeSearhInput = (event) => {
+    setSearchValue(event.target.value);
+    console.log(searchValue);
+  };
 
   return (
     // <div className="header">
@@ -28,8 +29,11 @@ export default function Header(props) {
         <li>
           <input
             className={searchOpen ? null : styles.noSearchInput}
-            onMouseOut={() => setTimeout(console.log("123"), 1000)}
+            onMouseOut={() => setTimeout(() => setSearchValue(""), 1000)}
+            onChange={onChangeSearhInput}
+            value={searchValue}
           />
+
           <img
             width={30}
             height={30}
