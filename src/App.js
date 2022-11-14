@@ -1,5 +1,5 @@
 import React from "react";
-
+import axios from "axios";
 import Header from "./components/Header";
 // import Slider from "./components/Slider";
 import Product from "./components/Product";
@@ -20,23 +20,33 @@ function App() {
   };
 
   React.useEffect(() => {
-    fetch("https://6367cafad1d09a8fa61aa550.mockapi.io/products")
-      .then((res) => {
-        return res.json();
-      })
-      .then((json) => {
-        setProducts(json);
-      });
+    axios
+      .get("https://6367cafad1d09a8fa61aa550.mockapi.io/products")
+      .then((res) => setProducts(res.data));
+    axios
+      .get("https://6367cafad1d09a8fa61aa550.mockapi.io/cart")
+      .then((res) => setCartProducts(res.data));
   }, []);
 
   const addToCart = (obj) => {
+    axios.post("https://6367cafad1d09a8fa61aa550.mockapi.io/cart", obj);
     setCartProducts((prev) => [...prev, obj]);
+  };
+
+  const removeFromCart = (id) => {
+    console.log("deleted");
+    // axios.delete(`https://6367cafad1d09a8fa61aa550.mockapi.io/cart${id}`);
+    setCartProducts((prev) => prev.filter((product) => product.id !== id));
   };
 
   return (
     <div>
       {cartOpened && (
-        <Cart products={cartProducts} closeCart={() => setCartOpened(false)} />
+        <Cart
+          products={cartProducts}
+          closeCart={() => setCartOpened(false)}
+          removeFromCart={removeFromCart}
+        />
       )}
       <Header
         onClickCart={() => setCartOpened(true)}
@@ -48,16 +58,10 @@ function App() {
       />
       {/* <Slider /> */}
       <div className="main-container">
-        <h3>
-          {!searchValue
-            ? "Товары"
-            : "Поиск по названию:" + ' "' + searchValue + '" '}
-        </h3>
+        <h3>{!searchValue ? "Товары" : "Поиск по названию:" + searchValue}</h3>
         <div className="content">
           {products
-            .filter((product) =>
-              product.name.toLowerCase().includes(searchValue.toLowerCase())
-            )
+            .filter((product) => product.name.includes(searchValue))
             .map((products) => (
               <Product
                 key={products.id}

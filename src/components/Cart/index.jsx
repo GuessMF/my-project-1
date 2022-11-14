@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Cart.module.scss";
 
-function Cart({products, closeCart}) {
+function Cart({products, closeCart, removeFromCart}) {
   return (
     <div className={styles.overlay}>
       <div className={styles.drawer}>
@@ -34,7 +34,7 @@ function Cart({products, closeCart}) {
                   <b>{obj.price} P </b>
                 </span>
               </p>
-              <button>X</button>
+              <button onClick={() => removeFromCart(obj.id)}>X</button>
             </div>
           ))}
         </div>
